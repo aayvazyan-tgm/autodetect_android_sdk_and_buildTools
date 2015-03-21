@@ -10,6 +10,7 @@ Available Functions:
 
 ```@param defaultTools if no Build Tool is found or this function fails, it will return the input parameter.```
 * project.getHighestAvailableTools(String defaultTools)
+
 Usage:
 ======
 Put the following in your ```build.gradle```:
