@@ -15,7 +15,7 @@ Usage:
 ======
 Put the following in your ```build.gradle```:
 ```
-apply from: 'https://raw.githubusercontent.com/aayvazyan-tgm/autodetect_android_sdk_and_buildTools/master/sdktools.gradle'
+apply from: 'https://github.com/aayvazyan-tgm/autodetect_android_sdk_and_buildTools/releases/download/1.0/sdktools.gradle'
 
 android {
     //use the newest SDK automatically if the given one is not available
