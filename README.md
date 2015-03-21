@@ -7,6 +7,7 @@ Available Functions:
 
 ```@param desiredSDK defines the SDK that should be searched for, if it is found it is returned by this function, elsewise the newest found SDK is returned. If none is found or this function fails, it will return the input parameter.```
 * project.getSDKIfPossible(int desiredSDK)
+
 ```@param defaultTools if no Build Tool is found or this function fails, it will return the input parameter.```
 * project.getHighestAvailableTools(String defaultTools)
 Usage:
