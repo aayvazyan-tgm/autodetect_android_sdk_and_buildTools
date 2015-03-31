@@ -7,15 +7,15 @@ Available Functions:
 --------------------
 
 ```@param desiredSDK defines the SDK that should be searched for, if it is found it is returned by this function, elsewise the newest found SDK is returned. If none is found or this function fails, it will return the input parameter.```
-* project.getSDKIfPossible(int desiredSDK)
+* ```project.getSDKIfPossible(int desiredSDK)```
 
 ```@param defaultTools if no Build Tool is found or this function fails, it will return the input parameter.```
-* project.getHighestAvailableTools(String defaultTools)
+* ```project.getHighestAvailableTools(String defaultTools)```
 
 Usage:
 ======
 Put the following in your ```build.gradle```:
-```
+```gradle
 apply from: 'https://github.com/aayvazyan-tgm/autodetect_android_sdk_and_buildTools/releases/download/1.0/sdktools.gradle'
 
 android {
