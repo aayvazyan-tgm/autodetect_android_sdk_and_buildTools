@@ -1,6 +1,7 @@
 # Smart Autodetection
-This plugin may help to avoid problems when collaborating on a android project by allowing the use of a different and android SDK version if the desired one is not available.
-As you should always use the latest available build tools version, the plugin searches for the latest installed version and allows a upgrade without the need to change the gradle file.
+This plugin may help to avoid problems when collaborating on a android project by allowing collaborators to use a different SDK version if the prefered one is not available.
+
+As you should always use the latest available build tools version, the plugin searches for the latest installed version and allows a upgrade without the need to touch the gradle file.
 
 Available Functions:
 --------------------
