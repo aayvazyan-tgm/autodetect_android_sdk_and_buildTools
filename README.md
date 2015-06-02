@@ -1,12 +1,12 @@
 # Smart Autodetection
-This plugin may help to avoid problems when collaborating on a android project by allowing collaborators to use a different SDK version if the prefered one is not available.
-
-As you should always use the latest available build tools version, the plugin searches for the latest installed version and allows a upgrade without the need to touch the gradle file.
+This plugin helps to:
+* Avoid problems with collaborators that do not stick to the defined SDK.
+* Removing the need to update the build.gradle file every time you update your android build-tools.
 
 Available Functions:
 --------------------
 
-```@param desiredSDK defines the SDK that should be searched for, if it is found it is returned by this function, elsewise the newest found SDK is returned. If none is found or this function fails, it will return the input parameter.```
+```@param desiredSDK defines the SDK that should be searched for, if it is found it is returned by this function, elsewise the newest found SDK is returned. If none is found or this function fails, this parameter is returned.```
 * ```project.getSDKIfPossible(int desiredSDK)```
 
 ```@param defaultTools if no Build Tool is found or this function fails, it will return the input parameter.```
@@ -25,3 +25,7 @@ android {
     buildToolsVersion project.getHighestAvailableTools("21.1.2")
 }
 ```
+Offline Usage:
+==============
+Download https://github.com/aayvazyan-tgm/autodetect_android_sdk_and_buildTools/raw/master/sdktools.gradle
+and refer to the local file instead of the link in the ```apply from '...'``` statement.
