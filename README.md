@@ -16,12 +16,12 @@ Usage:
 ======
 Put the following in your ```build.gradle```:
 ```gradle
-apply from: 'https://github.com/aayvazyan-tgm/autodetect_android_sdk_and_buildTools/releases/download/1.0/sdktools.gradle'
+apply from: 'https://github.com/aayvazyan-tgm/autodetect_android_sdk_and_buildTools/releases/download/1.2/sdktools.gradle'
 
 android {
     //use the newest SDK automatically if the given one is not available
     compileSdkVersion project.getSDKIfPossible(21)
-    //Use the lastest BuildTool Version available, default to the given value on error
+    //Use the lastest minor BuildTool Version available, that fits to the given major version. default to the given value on error
     buildToolsVersion project.getHighestAvailableTools("21.1.2")
 }
 ```
