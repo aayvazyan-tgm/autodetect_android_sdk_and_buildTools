@@ -21,7 +21,7 @@ apply from: 'https://github.com/aayvazyan-tgm/autodetect_android_sdk_and_buildTo
 android {
     //use the newest SDK automatically if the given one is not available
     compileSdkVersion project.getSDKIfPossible(21)
-    //Use the lastest minor BuildTool Version available, that fits to the given major version. default to the given value on error
+    //Use the lastest patch BuildTool Version available, that fits to the given minor version. default to the given value on error
     buildToolsVersion project.getHighestAvailableTools("21.1.2")
 }
 ```
