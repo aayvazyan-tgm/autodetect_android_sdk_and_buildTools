@@ -11,7 +11,7 @@ project.ext.set("getSDKIfPossible",
         {preferred ->
             return highestSdkAvailable(preferred)
         });
-//Use the lastest minor BuildTool Version for the given version available, default to the given value on error
+//Use the lastest patch BuildTool Version for the given version available, default to the given value on error
 //The input "21.1.2" will result in "21.1.XX" where XX stands for the newest installed build tools version
 //accessible via: project.getHighestAvailableTools("21.1.2")
 project.ext.set("getHighestAvailableTools",
@@ -87,7 +87,7 @@ public String latestBuildToolsAvailable(String defaultBuildTools) {
     try {
         def buildToolsVersions = buildToolsAvailable()
         //defaultBuildTools.substring(0,defaultBuildTools.lastIndexOf("."))
-        //find the newest build-tools version with the given major version
+        //find the newest build-tools version with the given minor version
         def latestBuildTools = null
         for(String buildTool: buildToolsVersions) {
             if (buildTool.contains(defaultBuildTools.substring(0,defaultBuildTools.lastIndexOf(".")))){
